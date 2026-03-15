@@ -1,0 +1,394 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("Bahan/Spider.jpg");
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Menyembunyikan scrollbar untuk Chrome, Safari, dan Edge */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #FFFFFF;
+  border-radius: 0 0 1rem 1rem;
+  border-bottom: 5px solid #ff751f;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation {
+  margin-right: 8rem;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.navigation ul li a {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.navigation ul li a:hover {
+  color: #ff751f;
+  border-bottom: 2px solid #ff751f;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 8rem;
+}
+
+.logo a:hover {
+  color: #ff751f;
+}
+
+/* Style Section Tentang Saya */
+main {
+  margin-top: 3rem;
+}
+
+.tentang-saya {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  border-right: 10px solid #ff751f;
+  border-bottom: 10px solid #ff751f;
+  margin: 0 8rem 3rem 8rem;
+}
+
+.kiri {
+  padding-left: 8rem;
+  flex: 1;
+}
+
+.kiri h2 {
+  color: #000000;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.3rem;
+}
+.kiri h1 {
+  color: #ff751f;
+  margin-bottom: 0.5rem;
+  line-height: 2rem;
+}
+
+.kiri p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.kiri b,i {
+  color: #ff751f;
+}
+
+.kanan {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.kanan img {
+  max-width: 75%;
+  height: auto;
+}
+
+.btn {
+  background-color: #ff751f;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 3px solid #000000;
+}
+
+.btn:hover {
+  color: #FFFFFF;
+}
+
+/* Style Section Jadwal */
+.jadwal {
+  margin: 0 8rem 3rem 8rem;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  border-right: 10px solid #ff751f;
+  border-bottom: 10px solid #ff751f;
+}
+
+.jadwal div {
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.jadwal h1,h3 {
+  text-align: center;
+}
+
+.jadwal h1 {
+  color: #ff751f;
+}
+
+.jadwal h3 {
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+table, th, td {
+  border: 2px solid #000000;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+}
+
+th {
+  background-color: #ff751f;
+}
+
+th,td {
+  padding: 0.5rem;
+}
+
+/* Style Section Kontak */
+.kontak {
+  margin: 0 8rem 3rem 8rem;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  border-right: 10px solid #ff751f;
+  border-bottom: 10px solid #ff751f;
+}
+
+.kontak h1 {
+  text-align: center;
+  padding-top: 1rem;
+  color: #ff751f;
+}
+
+.kontak h3 {
+  margin-bottom: 1.5rem;
+}
+
+.kontak-flex{
+  display: flex;
+}
+
+.map {
+  border-radius: 1rem;
+  border: 2px solid #ff751f;
+  width: 50%;
+  margin: 1rem 2rem 1rem 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 1rem 0;
+  width: 50%;
+}
+
+label {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  margin-bottom: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 2px solid #000000;
+  font-weight: 700;
+}
+
+input:focus {
+  background-color: #ff751f;
+}
+
+input:hover {
+  border: 2px solid #ff751f;
+}
+
+label:hover {
+  color: #ff751f;
+}
+
+textarea {
+  padding: 0.5rem;
+  border: 2px solid #000000;
+  border-radius: 1rem;
+  margin: 0 0 0.8rem 0;
+  font-weight: 700;
+}
+
+textarea:focus {
+  background-color: #ff751f;
+}
+
+textarea:hover {
+  border: 2px solid #ff751f;
+}
+
+form button {
+  padding: 0.5rem 0 0.5rem 0;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+  font-weight: 700;
+}
+
+form button:hover {
+  background-color: #ff751f;
+}
+
+/* Style Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #FFFFFF;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-top: 5px solid #ff751f;
+}
+
+svg {
+  margin: 0 1rem 0.5rem 1rem;
+}
+
+svg:hover {
+  fill: #ff751f;
+}
+
+footer div p:hover {
+  color: #ff751f;
+}
+
+/* Style Halaman 2 */
+header a {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-left: 3rem;
+}
+
+header a:hover {
+  color: #ff751f;
+  border-bottom: 1px solid #ff751f;
+}
+
+header h1 {
+  margin: auto;
+  cursor: pointer;
+}
+
+header h1:hover {
+  color: #ff751f;
+  border-bottom: 1px solid #ff751f;
+}
+
+.porto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 8rem 3rem 8rem;
+  padding: 0.5rem;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  border-bottom: 5px solid #ff751f;
+  border-right: 5px solid #ff751f;
+}
+
+.portofolio {
+  background-color: #000000;
+  border-top: 5px solid #ff751f;
+  border-left: 5px solid #ff751f;
+  border-radius: 1rem;
+  overflow: hidden;
+  flex: 0 0 calc(33% - 2rem);
+}
+
+.gambar {
+  height: 500px;
+  border-bottom:5px solid #ff751f;
+}
+
+.gambar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.judul {
+  text-align: center;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.judul h2 {
+  color: #000000;
+  background-color: #FFFFFF;
+  border-bottom: 5px solid #ff751f;
+  border-right: 5px solid #ff751f;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: #000000;
+}
+
+.judul h2:hover {
+  color: #ff751f;
+}
+
+.tools {
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.tools h3 {
+  background-color: #FFFFFF;
+  border-bottom: 5px solid #ff751f;
+  border-right: 5px solid #ff751f;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: #000000;
+}
+
+.tools h3:hover {
+  color: #ff751f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
